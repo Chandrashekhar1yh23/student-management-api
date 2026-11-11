@@ -1,0 +1,137 @@
+# Git and GitHub – Complete Steps
+
+## 1. Open Project Folder
+Open your project in VS Code and open the terminal.
+
+```powershell
+cd "C:\Users\Chandrashekhar\Downloads\backend\student-mangement-api"
+```
+
+## 2. Initialize Git
+```powershell
+git init
+```
+Creates a local Git repository.
+
+## 3. Create .gitignore File
+
+Create a file named `.gitignore` and add:
+
+```text
+node_modules/
+.env
+```
+
+This prevents uploading node_modules and sensitive environment variables.
+
+## 4. Check Git Status
+```powershell
+git status
+```
+Shows the files Git is tracking or detecting.
+
+## 5. Add Files to Staging Area
+```powershell
+git add .
+```
+Adds all eligible project files to the staging area.
+
+## 6. Commit Files
+```powershell
+git commit -m "Initial commit: Student Management API"
+```
+Saves the changes in the local Git repository.
+
+## 7. Create GitHub Repository
+
+1. Open https://github.com
+2. Login to your account.
+3. Click the + icon.
+4. Select New repository.
+5. Enter repository name: `student-management-api`.
+6. Select Public or Private.
+7. Click Create repository.
+
+Create an empty repository without adding another README.
+
+## 8. Connect Local Repository to GitHub
+```powershell
+git remote add origin https://github.com/Chandrashekhar1yh23/student-management-api.git
+```
+Connects the local project to the GitHub repository.
+
+## 9. Verify Remote Connection
+```powershell
+git remote -v
+```
+Checks whether the GitHub repository is connected.
+
+## 10. Check Branch Name
+```powershell
+git branch --show-current
+```
+Checks the current branch name. Mine is `main`.
+
+## 11. Push Project to GitHub
+```powershell
+git push -u origin main
+```
+Uploads the committed project files to GitHub and sets the upstream branch.
+
+## 12. Verify Upload
+
+Open:
+https://github.com/Chandrashekhar1yh23/student-management-api
+
+Check whether all project files and README are visible. Make sure `.env` and `node_modules` are not uploaded.
+
+---
+
+# For Future Updates
+
+Whenever you modify or add files to your project, use these commands:
+
+### Step 1: Check changes
+```powershell
+git status
+```
+
+### Step 2: Add changes
+```powershell
+git add .
+```
+
+### Step 3: Commit changes
+```powershell
+git commit -m "Updated student API"
+```
+
+### Step 4: Push changes
+```powershell
+git push
+```
+
+---
+
+# Important Git Commands
+
+| Command | Purpose |
+|---|---|
+| `git init` | Initialize Git |
+| `git status` | Check file status |
+| `git add .` | Add files to staging |
+| `git commit -m "message"` | Save changes |
+| `git remote -v` | Check GitHub connection |
+| `git branch --show-current` | Check branch |
+| `git push -u origin main` | First push |
+| `git push` | Upload future updates |
+| `git pull` | Get remote changes |
+| `git log --oneline` | View commit history |
+
+**Remember:**
+
+ADD → COMMIT → PUSH
+
+Git = Version Control System
+
+GitHub = Online platform to store and manage Git repositories.
