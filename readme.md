@@ -1,3 +1,4 @@
+Have suggestions or ideas for improvement? Feel free to share your feedback or open an issue
 Student Management API
 
 A RESTful backend application built using Node.js, Express.js, and MySQL to manage student records.
